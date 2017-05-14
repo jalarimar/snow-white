@@ -6,14 +6,25 @@ import java.util.Set;
 import types.Emotion;
 
 public class SupremacistTyrant {
+	
 	private String realName;
 	private String embellishedName;
-	private Set <Slave>mySlaves = new HashSet<Slave>();
+	private Set<Slave> mySlaves = new HashSet<Slave>();
 	
-	public SupremacistTyrant(String realName, String embellishedName){
-		this.realName = realName;
-		this.embellishedName = embellishedName;
+	// Task 2
+	private SupremacistTyrant() {
+		realName = "Jane Smith";
+		embellishedName = "Snow White";
 	}
+	
+	private static class SupremacistTyrantHolder {    
+        public static final SupremacistTyrant instance = new SupremacistTyrant();
+    }
+	
+	public static SupremacistTyrant getInstance() {    
+        return SupremacistTyrantHolder.instance;    
+    }
+	//
 	
 	public String getRealName(){
 		return realName;

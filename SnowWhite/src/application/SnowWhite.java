@@ -22,9 +22,10 @@ public class SnowWhite {
 	public static void main(String[] args) {
 		// Add your own calls within this method
 		
+		// Task 2
 		// create SupremacistTyrant
-		final SupremacistTyrant snowWhite = new SupremacistTyrant("Jane Smith", "Snow White");
-		final SupremacistTyrant pappaBear = new SupremacistTyrant("Jack Jones", "Pappa Bear");
+		final SupremacistTyrant snowWhite = SupremacistTyrant.getInstance();
+		//
 		
 		// create huntsman
 		Huntsman hmMark = new Huntsman("Mark", new SwordHuntingType());

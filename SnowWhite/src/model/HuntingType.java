@@ -8,15 +8,13 @@ public abstract class HuntingType {
 		setWeapon();
 	}
 	
+	// Task 3
+	protected abstract Weapon createWeapon();
+	
 	protected void setWeapon(){
-		if (this instanceof BowArrowHuntingType){
-			this.weapon = new BowAndArrow();
-		} else if (this instanceof MachineGunHuntingType){
-			this.weapon = new MachineGun();
-		} else if (this instanceof SwordHuntingType){
-			this.weapon = new Sword();
-		}
+		this.weapon = createWeapon();
 	}
+	//
 	
 	public String weaponName(){
 		return weapon.toString();
