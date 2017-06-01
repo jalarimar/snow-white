@@ -3,10 +3,9 @@ package application;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import model.Adult;
 import model.BowArrowHuntingType;
-import model.Child;
 import model.Dwarf;
+import model.Human;
 import model.Huntsman;
 import model.Slave;
 import model.SupremacistTyrant;
@@ -34,8 +33,10 @@ public class SnowWhite {
 		hmMark.hunt();
 		
 		// create slaves
-		final Slave georgie = new Adult ("George", "Georgie", 1963);
-		final Slave maxine = new Child("Maxine", "Maxie", 2004);
+		// Task 1
+		final Slave georgie = new Human("George", "Georgie", 1963);
+		final Slave maxine = new Human("Maxine", "Maxie", 2004);
+		//
 		final Slave sneezy = new Dwarf("Bob", "Sneezy", 1994, "Longbeards");
 		final Slave dopey = new Dwarf ("Steve", "Dopey", 1988, "Blacklocks");
 		final Slave grumpy = new Dwarf("John", "Grumpy", 1945, "Ironfists");

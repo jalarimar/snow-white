@@ -18,7 +18,7 @@ public class SupremacistTyrant {
 	}
 	
 	private static class SupremacistTyrantHolder {    
-        public static final SupremacistTyrant instance = new SupremacistTyrant();
+		private static final SupremacistTyrant instance = new SupremacistTyrant();
     }
 	
 	public static SupremacistTyrant getInstance() {    

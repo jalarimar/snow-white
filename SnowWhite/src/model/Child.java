@@ -1,5 +1,6 @@
+// Task 1
+/*
 package model;
-
 
 public class Child extends Human {
 
@@ -16,3 +17,4 @@ public class Child extends Human {
 		return "Human " + this.getClass().getSimpleName();
 	}
 }
+*/

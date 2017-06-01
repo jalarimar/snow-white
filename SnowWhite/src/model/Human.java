@@ -4,9 +4,9 @@ import java.util.Random;
 
 import types.Emotion;
 
-
-public abstract class Human extends Slave {
-	
+// Task 1
+public class Human extends Slave {
+//	
 	private Random randomGenerator = new Random();
 
 	public Human(String realName, String slaveName, Integer yearOfBirth) {
@@ -83,6 +83,22 @@ public abstract class Human extends Slave {
 		}
 		System.out.println(" " + getCanonicalName() + ": " + myStatement);
 	}
-	public abstract Boolean isAbleToDoHeavyWork();
+	
+	// Task 1
+	public Boolean isAbleToDoHeavyWork() {
+		Integer age = this.getAge();
+		if (age < 14) {
+			System.out.println(getSlaveName() + " is not able to do work");
+			return false;
+		} else {
+			System.out.println(getSlaveName() + " is able to do work");
+			return true;
+		}
+	}
 
+	@Override
+	public String toString(){
+		return "Human " + getRealName();
+	}
+	//
 }

@@ -1,3 +1,5 @@
+// Task 1
+/*
 package model;
 
 public class Adult extends Human {
@@ -16,3 +18,4 @@ public class Adult extends Human {
 		return "Human " + this.getClass().getSimpleName();
 	}
 }
+*/

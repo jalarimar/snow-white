@@ -67,5 +67,18 @@ public abstract class Slave {
 
 	public String toString(){
 		return this.getCanonicalName();
-	}	
+	}
+	
+	// Task 6
+	public void add(Slave slave) {
+		// do nothing
+	}
+	public void remove(Slave slave) {
+		// do nothing
+	}
+	public Slave getChild(int index) {
+		// do nothing
+		return null;
+	}
+	//
 }
